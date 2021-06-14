@@ -41,12 +41,14 @@ const words = [
 
 text.focus();
 
+//Pegar uma palavra aleatória do array de palavras
 function chooseWord() {
   var randomIndex = Math.floor(Math.random() * words.length);
   word.textContent = words[randomIndex];
   text.value = "";
 }
 
+//decresce o tempo
 function countdown() {
   time--;
   timeLeft.textContent = time + 's';
@@ -55,22 +57,27 @@ function countdown() {
   } else setTimeout(countdown, 1000);
 }
 
+//adiciona o tempo
+function addTime(seconds) {
+  time += seconds;
+  timeLeft.textContent = time + 's';
+}
+
+//Mostra a tela de perda de jogo
 function lostTheGame() {
   endGame.style.display = "flex";
   endGame.innerHTML = `<h1>Time ran out</h1>
    <p> Your final score is ${score.innerHTML}</p> 
    <button onclick="location.reload()">Reload</button>`;
 }
-function addTime(seconds) {
-  time += seconds;
-  timeLeft.textContent = time + 's';
-}
 
+//Pegar a dificuldade no localStorage
 function getValueFromStorage() {
   let currentIndex = JSON.parse(localStorage.getItem("selectedIndex"));
   difficulty.selectedIndex = currentIndex;
 }
 
+//Event listeners
 text.addEventListener("keyup", function () {
   if (text.value == word.textContent) {
     addTime(level[difficulty.value]);
