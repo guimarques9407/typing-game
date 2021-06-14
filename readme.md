@@ -1,6 +1,7 @@
 ## Speed Typer Typing Game
 
-Jogo para bater o relógio digitando palavras aleatórias
+Jogo para bater o relógio digitando palavras aleatórias. Projeto realizado no curso:
+20 Web Projects With Vanilla JavaScript na plataforma Udemy.
 
 ## Project Specifications
 
