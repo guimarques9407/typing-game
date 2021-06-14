@@ -66,8 +66,8 @@ function addTime(seconds) {
 //Mostra a tela de perda de jogo
 function lostTheGame() {
   endGame.style.display = "flex";
-  endGame.innerHTML = `<h1>Time ran out</h1>
-   <p> Your final score is ${score.innerHTML}</p> 
+  endGame.innerHTML = `<h1>O tempo acabou</h1>
+   <p> Seu placar final é ${score.innerHTML}</p> 
    <button onclick="location.reload()">Reload</button>`;
 }
 
