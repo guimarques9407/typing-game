@@ -1,12 +1,11 @@
 ## Speed Typer Typing Game
 
-Game to beat the clock by typing random words
+Jogo para bater o relógio digitando palavras aleatórias
 
 ## Project Specifications
 
-- Create game UI including a difficuly setting
-- Generate random word and place in DOM
-- Score increase after word is typed
-- Implement timer
-- Add certain amount of time after word is typed based on difficulty
-- Store difficulty setting in local storage
+- Gerar palavras aleatórias e colocar na DOM
+- Placar aumenta depois da palavra ser digitada
+- Implementar um timer
+- Adicionar certa quantidade de tempo baseado na dificuldade depois que a palavra é digitada
+- Armazenar a dificuldade no local storage
